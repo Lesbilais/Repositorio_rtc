@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="./action.php" method="POST" name="subir piso">
+    <div>
+      <label for="name">nombre:</label>
+      <input id="name" type="text" value="nombre de ejemplo">
+    </div>
+    <br>
+    <div>
+      <label for="date">Fecha de nacimiento:</label>
+      <input id="date" type="date">
+    </div>
+    <br>
+
+    <div>
+      <label for="check">Aceptas los terminos</label>
+      <input id="check" type="checkbox" required>
+    </div>
+    <br>
+    <div>
+      <label for="color"> elige tu color</label>
+      <input id="color" type="color">
+    </div>
+    <br>
+    <label for="hour">para saber que no eres un robot di la hora</label>
+    <input id="hour" type="time">
+    <div>
+      <div>
+        <label for="email">email</label>
+        <input id="email" type="email" placeholder="tucorreo@tudominio.com">
+      </div>
+
+      <input type="reset" value="Limpiar formulario">
+      <button type="reset">Limpiar formulario</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+
+</html>
