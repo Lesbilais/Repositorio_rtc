@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <picture>
+    <source media="(min-width: 600px)" srcset="-xl.png" />
+    <source media="(min-width: 300px) and (max-width: 600px)" srcset="large.png" />
+    <source media="(max-width: 50px)" srcset="small.png" />
+    <img src="medium.png" alt="HTML5 medium" />
+  </picture>
+
+  <map name="infographic">
+    <area shape="poly" coords="130,147,200,107,254,219,130,228" href="https://developer.mozilla.org/docs/Web/HTML"
+      target="_blank" alt="HTML" />
+  </map>
+  <img usemap="#infographic" src="./assets/mapa.png" alt="MDN infographic" />
+
+  <iframe width="560" height="315" src="https://youtu.be/us56bkaUOT4" title="YouTube video player" frameborder="0"
+    allow="accelerometer; 
+	autoplay; clipboard-write; encrypted-media; gyroscope; 
+	picture-in-picture" allowfullscreen>
+  </iframe>
+  <object data="catgame.swf">
+    <param name="quality" value="high" />
+  </object>
+  <video src="./assets/thepower.mp4" autoplay controls width="600">
+    Tu navegador no admite el elemento <code>video</code>.
+  </video>
+  WEBVTT
+  00:03.000 --> 00:05.000
+  <v Alberto>
+    El fullstack development o desarrollo
+    web es el arte de construir aplicaciones
+    <video controls src="thepower.mp4" autoplay controls width="600">
+      <track default kind="captions" srclang="es" src="subtitulos.vtt.txt" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+    <audio src="audio.mp3" preload="none" controls></audio>
+</body>
+
+</html>
