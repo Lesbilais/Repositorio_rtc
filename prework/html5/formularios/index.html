@@ -30,16 +30,64 @@
       <input id="color" type="color">
     </div>
     <br>
-    <label for="hour">para saber que no eres un robot di la hora</label>
-    <input id="hour" type="time">
     <div>
-      <div>
-        <label for="email">email</label>
-        <input id="email" type="email" placeholder="tucorreo@tudominio.com">
-      </div>
+      <label for="hour">para saber que no eres un robot di la hora</label>
+      <input id="hour" type="time">
+    </div>
+    <br>
+    <div>
+      <label for="email">email</label>
+      <input id="email" type="email" placeholder="tucorreo@tudominio.com">
+    </div>
+    <br>
+    <div>
+      <label for="photos">po nlas fotos de tu casa</label>
+      <input id="photos" type="file" multiple>
+    </div>
+    <br>
+    <label for="dni">numero de dni</label>
+    <input id="dni" type="number" max="99999999" min="9999999" required>
 
+    <br>
+    <div>
+      <label for="telefono">numero de telefono</label>
+      <input id="telefono" type="tel" placeholder="ej: +34627165295">
+    </div>
+    <br>
+    <div>
+      <label for="contraseña">contraseña</label>
+      <input id="contraseña" type="password" required maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+    </div>
+    <br>
+    <div>
+      <label for="happy">comoestas</label>
+      <input id="happy" type="range" min="300" max="7000" value="501">
+    </div>
+    <br>
+    <div>
+      <label for="radio">radio</label>
+      <input type="radio" id="radio">
+    </div>
+    <br>
+    <div>
+      <label for="city">elige tu ciudad</label>
+      <select id="city">
+        <option disabled selected>cualquier ciudad</option>
+        <option value="Madrid">madrid</option>
+        <option value="Barcelona">Barcelona</option>
+      </select>
+    </div>
+    <br>
+    <div>
+
+      <label for="textarea">Escribe acá</label>
+      <textarea id="textarea" cols="30" rows="10"></textarea>
+
+    </div>
+    <br>
+    <div>
       <input type="reset" value="Limpiar formulario">
-      <button type="reset">Limpiar formulario</button>
+      <button type="reset" disabled>Limpiar formulario</button>
       <button type="submit">Enviar</button>
     </div>
   </form>
