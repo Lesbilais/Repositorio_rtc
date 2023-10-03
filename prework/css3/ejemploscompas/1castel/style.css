@@ -1,11 +1,11 @@
 :root {
-  --primary: #edca0d;
+  --primary: #868686;
   --secondary: #000000;
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
-  background-image: url(./assets/wallpaper.png);
+  background-image: url(./assets/wallpaper.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
