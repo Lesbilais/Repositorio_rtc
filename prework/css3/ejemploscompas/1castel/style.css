@@ -1,5 +1,5 @@
 :root {
-  --primary: #868686;
+  --primary: #8b8b8b;
   --secondary: #000000;
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -66,10 +66,12 @@ input {
   justify-content: space-around;
   gap: 15px;
   position: absolute;
+  
 }
 
 .bestiary img {
   box-shadow: 2px 2px 3px 0 rgb(73, 39, 77), 4px 4px 9px 0 rgb(247, 223, 127);
   border-radius: 20px;
   border: 2px solid #faf8f8;
+  height: 200px;
 }
