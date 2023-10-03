@@ -57,7 +57,7 @@ input {
 }
 
 
-.bestiary {
+.momin {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -69,7 +69,7 @@ input {
   
 }
 
-.bestiary img {
+.momin img {
   box-shadow: 2px 2px 3px 0 rgb(73, 39, 77), 4px 4px 9px 0 rgb(247, 223, 127);
   border-radius: 20px;
   border: 2px solid #faf8f8;
