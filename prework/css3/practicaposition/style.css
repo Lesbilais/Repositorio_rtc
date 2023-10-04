@@ -1,0 +1,68 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+  text-decoration: none;
+  
+}
+:root {
+--color:#000000;
+--color-1: #9ad79b
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color, black);
+  color: var(--color-1)
+}
+header {
+  position:fixed;
+  top: 0;
+	padding: 10px;
+	width:100%;
+  background-color: var(--color, black);
+  border-bottom: var(--color-1) 1px dotted;
+}
+main {
+  padding: 10px;
+  margin-top: 80px;
+  border-bottom: var(--color-1) 1px dotted;
+  border-top: var(--color-1) 1px dotted;
+}
+main > section {
+  border-bottom: var(--color-1) 1px dotted;
+  padding-bottom: 10px;
+}
+
+aside {
+  position: absolute;
+    right: 5%;
+  border: var(--color-1) 1px dotted;
+  margin-top: 30px;
+ padding: 30px;
+ }
+
+.feature{
+  text-align: center;
+  }
+  .container-section {
+    padding: 20px;
+    margin-top: 250px;
+    border-bottom: var(--color-1) 1px dotted;
+    border-top: var(--color-1) 1px dotted;
+  }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-1);
+  color: var(--color);
+  text-align: center;
+}
