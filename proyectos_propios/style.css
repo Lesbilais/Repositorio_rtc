@@ -4,8 +4,14 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
 :root {
   --color_1: black;
   --color_2: grey;
+  --color_3: white;
+}
+body {
+
 }
