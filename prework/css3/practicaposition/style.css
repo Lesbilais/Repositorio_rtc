@@ -5,13 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  
   text-decoration: none;
   
 }
 :root {
 --color:#000000;
---color-1: #9ad79b
+--color-1: #9ad79b;
 
 }
 body {
