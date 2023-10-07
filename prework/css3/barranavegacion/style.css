@@ -1,3 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+  --rtc-primary-color: #1090CB;
+  --rtc-secondary-color: #000000;
+  --rtc-teritiary-color: #FFFFFF;
+  --rtc-background-color: #1090cb2b;
+}
 header {
   display: flex;
   padding: 40px;
@@ -6,20 +21,21 @@ header {
 }
 
 header > img {
-  width: 50px;
-  height: 50px;
+  
+  height: 30px;
 }
 header > nav {
   flex-grow: 1;
   background-color: orange;
   display: flex;
   justify-content: center;
+  flex-shrink: 2;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-evenly;
-  background-color: red;
+  
   width: 100%;
   list-style: none;
 }
@@ -50,7 +66,9 @@ a {
   min-height: 100svh;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 30px;
+  
+  
 }
 
 /* izquierda */
