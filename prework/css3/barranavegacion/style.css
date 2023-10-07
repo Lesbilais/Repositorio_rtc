@@ -25,6 +25,7 @@ header > img {
   height: 30px;
 }
 header > nav {
+  flex-basis: 2;
   flex-grow: 1;
   background-color: orange;
   display: flex;
@@ -125,4 +126,21 @@ button {
       width: 100%;
       min-width: 0px;
   }
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  list-style-type: none;
+  gap: 20px;
+}
+
+ul > li {
+  flex-basis: 350px;
+  flex-grow: 1;
+}
+
+ul > li > img {
+  width: 100%;
 }
