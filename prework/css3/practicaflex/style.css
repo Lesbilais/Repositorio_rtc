@@ -6,6 +6,11 @@
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   list-style: none;
+  
+}
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 :root {
   --color-primary:#9c89b8;
@@ -62,14 +67,14 @@
     height: 30px;
   }
 
-  /* FIN HEADER */
+ 
   /* HERO */
   #hero {
     display: flex;
     padding:  0px 60px;
     padding-top: 150px;
-    align-items: center;
-    justify-content: center;
+   align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   
   }
@@ -90,6 +95,7 @@
   
  #hero > img {
    width: 400px;
+   animation: kenburns-top-right 5s ease-out infinite both;
    }
 
   #hero > div > p {
@@ -110,40 +116,166 @@
     
   }
 
-  /* tienda */
+  /* tienda-galeria */
 #tienda {
+  margin-top: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  background-color: var(--color-fourth);
 }
 
  h2 {
   color: var(--color-primary);
   font-weight: 500;
+  font-size: 40px;
 }
 
  .gallery-container {
+ 
   display: flex;
-  width: 80%;
-  height: 70px;
-  background-color: var(--color-primary);
-  border-radius: 15px;
- justify-content: space-around;
-  align-items: center;
-  max-width: 680px;
-  min-width: 340px;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  list-style-type: none;
+  gap: 20px;
 }
-.image-sweet {
-  width: 110px;
+.gallery-container > li {
+    flex-basis: 250px;
+    flex-grow: 1;
+   
+  }
+.gallery-container > li > img {
+  width: 100%;
 }
 
+ /* about */
+#about-container {
+text-align: center;
+  padding: 50px;
+  height: 70vh;
+  position: relative;
+background-image: url(./assets/wallpaper.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
 
-/*medias query */
+
+}
+#about-container h2 {
+  
+  color: var(--color-secondary);
+  position: relative;
+}
+#about-container p {
+  position: relative;
+  color: var(--color-white); 
+}
+#about-container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, .55);
+}
+
+	
+
+
+/*formulario*/
+
+  .form-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-primary);
+    
+  }
+  h3 {
+    text-align: center;
+    color: var(--color-primary);
+  }
+  .form-grupo {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-grupo > input {
+    padding: 8px;
+    border: 2px dotted var(--color-primary);
+    border-radius: 5px;
+  }
+  .form-grupo > #text {
+    width: 500px;
+    height: 200px;
+  }
+  .form-grupo > button {
+    color: var(--color-white);
+  }
+  /*footer*/
+  footer{
+    background-color: var(--color-primary);
+  }
+  h4 {
+    text-align: center;
+    color: var(--color-white);
+    padding-bottom:10px;
+  }
+  .footer-container {
+   bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+  justify-content: center;
+  color: var(--color-white);
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+   text-align: center;
+    
+  }
+  
+  .footer {
+    flex-grow: 1;
+    width: 250px;
+  
+  }
+  
+  .footer  > li:first-child {
+    font-weight: bolder;
+   
+  }
+
+  /*medias query */
 
 
   @media screen and (max-width: 920px) {
-
+    h2 {
+      
+      font-size: 25px;
+      text-align: center;
+    }
     header > nav {
       display: none;
     }
@@ -167,9 +299,24 @@
     #hero > img {
       width: 350px;
     }
-    h2 {
-      font-size: 15px;
-    }
+   
   }
+  @media screen and (max-width: 600px) {
+ 
+    .form-grupo > #text {
+      width: 300px;
+      height: 200px;
+    }
+}
+@keyframes kenburns-top-right {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 84% 16%;
+  }
+  100% {
+    transform: scale(1.25) translate(20px, -15px);
+    transform-origin: right top;
+  }
+}
 
-  
+ 
