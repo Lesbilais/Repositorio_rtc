@@ -21,8 +21,7 @@ header {
 }
 
 header > img {
-  
-  height: 30px;
+ height: 30px;
 }
 header > nav {
   flex-basis: 2;
@@ -36,8 +35,7 @@ header > nav {
 .nav-list {
   display: flex;
   justify-content: space-evenly;
-  
-  width: 100%;
+ width: 100%;
   list-style: none;
 }
 a {
