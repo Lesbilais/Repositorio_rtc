@@ -97,17 +97,17 @@
     color: var(--color-secondary);
   }
   button {
+    all: unset;
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: uppercase;
     background-color: var(--color-primary);
-    color: var(--color-white);
     border: none;
    cursor: pointer;
   }
   button:hover {
     background-color: var(--color-secondary);
-    color: var(--color-white);
+    
   }
 
   /* tienda */
@@ -134,7 +134,9 @@
   max-width: 680px;
   min-width: 340px;
 }
-
+.image-sweet {
+  width: 110px;
+}
 
 
 /*medias query */
