@@ -8,7 +8,147 @@
   list-style-type: none;
 }
 :root {
-  --color_1: black;
-  --color_2: grey;
-  --color_3: white;
+  --color_1: #5d16a6;
+  --color_2: #9683ec;
+  --color_3: #f7b801;
+  --color_4: antiquewhite;
+  --color_5:#f35b04;
+  --color_white:white;
+  --color_black:black;
 }
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+}
+nav {
+  background-color: var(--color_1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 20px 0;
+  color: var(--color_white);
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: var(--color_5);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  padding:  100px 50px 60px;
+ align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+}
+
+.hero > img {
+ width: 300px;
+ border-radius: 50%;
+ filter: drop-shadow(0px 0px 2px black);
+
+}
+.hero > img:hover {
+  filter: grayscale(100%) drop-shadow(0px 0px 2px black);
+ 
+ }
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 400px;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--color_1);
+}
+h2 {
+  color: var(--color_2);
+}
+.rrss {
+  display: flex;
+  gap: 20px;
+}
+.rrss > a > img{
+ height: 30px;
+}
+/*Sobre mi*/
+#about {
+  text-align: center;
+  padding: 50px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--color_4);
+  background-image: url(./assets/pexels-tranmautritam-245032.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+background-attachment: fixed;
+position: relative;
+ }
+  h3 {
+    color: var(--color_white);
+    position: relative;
+    font-size: 24px;
+  }
+  #about > p {
+    color:var(--color_white);
+    position: relative;
+    font-size: 18px;
+  }
+  #about::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .55);
+  }
+
+/*experiencia*/
+#experiencia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+ul p {
+  padding: 10px;
+}
+
+
+
+  @media screen and (max-width: 800px) {
+    .hero > div {
+     text-align: center;
+      align-items: center;
+    }
+    
+  }
