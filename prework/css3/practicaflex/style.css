@@ -8,6 +8,9 @@
   list-style: none;
   
 }
+a {
+  color: white;
+}
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -55,6 +58,7 @@ html {
   }
   nav a:hover {
     background-color: var(--color-secondary);
+    color: var(--color-white);
    }
   nav li {
     flex: 1;
@@ -65,8 +69,17 @@ html {
     display: none;
     width: 30px;
     height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
   }
+  #checkbox {
+    display: none;
+}
 
+#checkbox:checked ~ nav {
+    width: 50%;
+}
  
   /* HERO */
   #hero {
@@ -274,12 +287,37 @@ gap: 20px;
       font-size: 25px;
       text-align: center;
     }
-    header > nav {
-      display: none;
-    }
     .menu {
       display: block;
     }
+    header > nav {
+      position: absolute;
+      top: 0;
+      height: 100svh;
+      right: 0;
+      width: 0px;
+      padding-top: 100px;
+      overflow: hidden;
+      background-color: var(--color-secondary);
+      transition: all 0.5s;
+     
+    }
+   
+
+  header > nav > ul {
+      display: flex;
+   flex-direction: column;
+      justify-items: center;
+   align-items: end;
+padding-right: 30px;
+      height: 30%;
+  }
+  header > nav > ul > li > a {
+    color: var(--color-white);
+  }
+  header > nav > ul > li > a:hover {
+    color: var(--color-primary);
+  }
      #hero {
      
       padding-top: 150px;
@@ -305,7 +343,9 @@ gap: 20px;
       width: 300px;
       height: 200px;
     }
-}
+
+  }
+
 @keyframes kenburns-top-right {
   0% {
     transform: scale(1) translate(0, 0);
