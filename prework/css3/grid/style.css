@@ -1,0 +1,18 @@
+.container {
+  width: 80%;
+  height: 100svh;
+  margin: auto;
+  margin-top: 200px;
+  background-color: aquamarine;
+  display: grid;
+  gap: 2%;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit,minmax(200px, 1fr));
+  justify-content: center;
+  align-content: center;
+
+}
+.item {
+  background-color: blue;
+ 
+}
