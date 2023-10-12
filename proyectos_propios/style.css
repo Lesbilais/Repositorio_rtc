@@ -122,12 +122,12 @@ position: relative;
   h3 {
     color: var(--color_white);
     position: relative;
-    font-size: 24px;
+ 
   }
   #about > p {
     color:var(--color_white);
     position: relative;
-    font-size: 18px;
+  
   }
   #about::before {
     position: absolute;
@@ -142,18 +142,27 @@ position: relative;
 /*experiencia*/
 #experiencia {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+ gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+ 
+  flex-wrap: wrap;
 }
-ul p {
-  padding: 10px;
+.item1{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+
+ width: 300px;
+  
+
 }
 
+h4 {
 
-
+font-weight: 1000;
+}
   @media screen and (max-width: 800px) {
     .hero > div {
      text-align: center;
