@@ -72,10 +72,7 @@ nav a:hover {
  filter: drop-shadow(0px 0px 2px black);
 
 }
-.hero > img:hover {
-  filter: grayscale(100%) drop-shadow(0px 0px 2px black);
- 
- }
+
 .hero > div {
   display: flex;
   flex-direction: column;
@@ -112,23 +109,17 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: var(--color_4);
-  background-image: url(./assets/pexels-tranmautritam-245032.jpg);
+ background-image: url(./assets/pexels-tranmautritam-245032.jpg);
 background-repeat: no-repeat;
 background-position: center top;
 background-attachment: fixed;
 position: relative;
  }
-  h3 {
+  h3, #about > p {
     color: var(--color_white);
     position: relative;
- 
-  }
-  #about > p {
-    color:var(--color_white);
-    position: relative;
+ }
   
-  }
   #about::before {
     position: absolute;
     content: "";
@@ -145,7 +136,7 @@ position: relative;
    padding: 50px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 30px;
-text-align: center;
+text-align: center; 
 
 }
 
