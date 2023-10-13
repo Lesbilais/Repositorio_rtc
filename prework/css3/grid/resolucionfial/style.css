@@ -1,0 +1,100 @@
+/* Definición de variables CSS personalizadas */
+:root {
+  --primary-color: rgb(236, 236, 236);   /* Color primario */
+  --secondary-color: rgb(21, 21, 21);    /* Color secundario */
+  --blue-color: #2bc5cd;                /* Color azul */
+  --orange-color: #ff693d;              /* Color naranja */
+  --border: 2px solid var(--blue-color); /* Borde con el color azul */
+  --spacing: 28px;                      /* Espaciado */
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos del cuerpo del documento */
+body {
+  background-color: var(--primary-color); /* Fondo principal */
+  color: var(--primary-color);             /* Color de texto principal */
+  display: grid;                           /* Diseño de cuadrícula */
+  grid-template-columns: repeat(3, 1fr);    /* Tres columnas iguales */
+  grid-auto-rows: 300px;                   /* Altura automática de filas */
+  gap: var(--spacing);                     /* Espaciado entre celdas */
+  padding: var(--spacing);                 /* Relleno exterior */
+}
+/* Estilos de la cabecera */
+header {
+  grid-row: 1/3;                           /* Ocupa filas 1 y 2 */
+  display: grid;                           /* Diseño de cuadrícula */
+  background-color: var(--blue-color);     /* Fondo azul */
+  padding: var(--spacing);                 /* Espaciado */
+  text-align: justify;                     /* Justificar el texto */
+}
+/* Estilos del título en la cabecera */
+header > h1 {
+  font-size: 30px;                          /* Tamaño de fuente */
+  text-transform: uppercase;               /* Texto en mayúsculas */
+}
+/* Estilos del contenido principal */
+main {
+  border: var(--border);                   /* Borde con el color azul */
+  color: var(--blue-color);                /* Color de texto azul */
+  text-transform: uppercase;               /* Texto en mayúsculas */
+  display: grid;                           /* Diseño de cuadrícula */
+  place-items: center;                     /* Centrar contenido */
+  text-align: center;                      /* Texto centrado */
+}
+
+/* Estilos del pie de página */
+footer {
+  grid-column: 2/4;                        /* Ocupa columnas 2 y 3 */
+  display: grid;                           /* Diseño de cuadrícula */
+  place-items: left;                       /* Alinear contenido a la izquierda */
+  background-color: var(--orange-color);   /* Fondo naranja */
+  padding: var(--spacing);                 /* Espaciado */
+}
+/* Estilos del botón en el pie de página */
+footer > button {
+  width: 200px;                            /* Ancho fijo */
+  height: fit-content;                     /* Altura ajustada al contenido */
+  padding: var(--spacing);                 /* Espaciado */
+  border: none;                            /* Sin borde */
+  text-transform: uppercase;               /* Texto en mayúsculas */
+}
+/* Con esta media query conseguiremos una sola columna en mobile */
+@media (max-width: 650px) {
+  body {
+    grid-template-columns: 1fr;             /* Una sola columna */
+  }
+  footer {
+    grid-column: 1;                        /* Ocupa columna 1 */
+  }
+}
+
+/* Resto del CSS */
+
+
+.school {
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
+}
+
+.student {
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9e4ce16148dd5cbeb1065410/89f80abe-6acd-d8dc-a341-3e571206975b.jpg);
+}
+
+.time {
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/773a5aa425b1502aaac14708/f2b45624-c8f6-3aa0-0ee4-58adda3c89b0.jpg);
+}
+
+.alumni {
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg);
+}
+
+.alumni,
+.school,
+.student,
+.time {
+  background-size: cover;
+}
