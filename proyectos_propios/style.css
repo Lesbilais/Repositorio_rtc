@@ -115,6 +115,9 @@ background-position: center top;
 background-attachment: fixed;
 position: relative;
  }
+ h3{
+  font-size: 2em;
+ }
   h3, #about > p {
     color: var(--color_white);
     position: relative;
@@ -136,14 +139,15 @@ position: relative;
    padding: 50px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 30px;
-text-align: center; 
-
 }
 
 
 h4 {
-
 font-weight: 1000;
+font-size: 2em;
+}
+.item1 > ul > li::before {
+content: "⚫ " ;
 }
   @media screen and (max-width: 800px) {
     .hero > div {
