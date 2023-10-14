@@ -136,19 +136,34 @@ position: relative;
 /*experiencia*/
 #experiencia {
   display: grid;
-   padding: 50px;
+padding: 50px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 30px;
+gap: 20px;
+text-align: justify;
 }
-
-
 h4 {
 font-weight: 1000;
 font-size: 2em;
+border-bottom: var(--color_1);
 }
 .item1 > ul > li::before {
-content: "⚫ " ;
+content: "🔘";
 }
+.item1 > ul > li {
+ padding: 10px 0px;
+ 
+}
+.style-li {
+  padding-right: 5%;
+ border-right: var(--color_1) 4px solid;
+}
+.item1  p {
+  padding-top: 15px;
+  }
+  
+
+  
+
   @media screen and (max-width: 800px) {
     .hero > div {
      text-align: center;
@@ -213,5 +228,14 @@ content: "⚫ " ;
     #menu-check:checked ~label #menu-cerrar {
       display: block;
     }
-   
+    #experiencia {
+    text-align: center;
+
   }
+  .style-li {
+   border-right: none;
+   border-bottom: var(--color_1) 4px solid;
+  }
+  }
+
+  
