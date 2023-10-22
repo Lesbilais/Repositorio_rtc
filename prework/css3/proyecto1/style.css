@@ -9,6 +9,7 @@
   --color5:#1A1A1A;
   --color6:#e9ecef;
   --color7:#ffffff;
+  --coloropacity:rgba(255, 255, 255, 0.5);
   --font-family1: 'Roboto', sans-serif;
   --font-family2:'Lora', serif;
   --logo-font:'Work Sans', sans-serif;
@@ -19,15 +20,16 @@
   box-sizing: border-box;
   font-family: var(--font-family1);
   }
-
-ul,
-ol {
+  html {
+    scroll-behavior: smooth;
+}
+ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--color4);
+  color: var(--color3);
 }
 
 h1 {
@@ -37,6 +39,9 @@ h1 {
 h2, h3, h4 {
   font-family: var(--font-family2);
 }
+h4 {
+  font-size: 25px;
+}
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -44,6 +49,7 @@ h2, h3, h4 {
   flex-wrap: wrap;
   gap: 10px;
 }
+/* header */
 .button-contact{
   background: var(--color2);
   color: var(--color3);
@@ -64,35 +70,41 @@ position:sticky;
   width: 100%;
   height: 10svh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: var(--color7);
+  background-color:var(--coloropacity);
   z-index: 999999999999999999999;
 }
-
+header img {
+width: 50px;
+}
+/* hero */
 #hero {
   display: flex;
   flex-direction: column;
-  background-image: url(./assets/health.jpg);
+  background-image: url(https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821076/health_lbkoj6.jpg);
   height: 80svh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   justify-content: start;
-  padding: 100px;
-  padding-top: 13%;
+  background-attachment: fixed;
+  padding: 10% 10%;
 }
 .button-hero {
   margin-top: 2%;
   width: 200px;
   cursor: pointer;
 }
-
+#menu , #menu-check {
+  display: none;
+}
 
 #hero > h2 {
-  font-size: 60px;
-  width: 40%;
+  font-size: 3em;
+  width: 50%;
   font-family: var(--font-family2);
 }
+
 .grid-container {
  display: grid;
  padding: 50px;
@@ -110,7 +122,6 @@ position:sticky;
   flex-wrap: wrap;
 }
 
-
 .item img {
   position: relative;
   top: 0;
@@ -120,6 +131,14 @@ position:sticky;
   padding-left: 20px;
   font-family: var(--font-family2);
 }
+/* sales */
+#sales > h4, #Shop > h4 {
+
+  padding-top: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
 .card {
   margin:50px 0px;
   width: 250px;
@@ -137,25 +156,302 @@ gap: 20px;
   width: 100%;
   object-fit: contain;
 }
-h4 {
-  font-size: 25px;
-}
+
 .card > p {
-  text-align: justify;
+  text-align: center;
   margin: 10px;
 }
 
 .card button {
   cursor: pointer;
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 1px solid var(--color3);
   background-color: var(--color1);
   border-radius: 10px;
 }
-.footer > div {
-  height: 300px;
- 
 
+
+
+/* shop */
+.shop {
+  margin:50px 0px;
+  width: 400px;
+padding: 10px 10px;
+border-radius: 10px;
+gap: 20%;
+text-align: center;
+background-color: var(--color6);
+  transition: transform 0.5s;
 }
 
-/* https://www.figma.com/file/omJ4QC8ohBOOmEWuTv9Jj2/Landing-Page-Free-Template-(Ecommerce)-(Community)?type=design&node-id=23-87&mode=design&t=acyWk942AorRmgRS-0 */
+.shop > img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.shop > p {
+  text-align: center;
+  
+}
+
+.shop button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid var(--color1);
+  background-color: var(--color1);
+  border-radius: 10px;
+}
+/* contact */
+.contact-container {
+  background-color: var(--color1);
+text-align: center;
+}
+
+
+.form-container{
+ 
+ padding: 50px 0px;
+ border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+ color: var(--color-primary);
+}
+
+.form-grupo {
+ 
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ padding-bottom: 5px;
+ justify-content: center;
+ align-items: center;
+}
+
+.form-grupo > input {
+ padding: 8px;
+
+ border-radius: 5px;
+}
+.form-grupo > #text {
+ width: 500px;
+ height: 200px;
+}
+
+
+/* about */
+#about {
+ margin: 50px 0px;
+
+  min-height: 60svh;
+}
+
+#about > div {
+  position: relative;
+  max-width: 1400px;
+}
+
+#about > div > article {
+  background-color: var(--color6);
+  width: 350px;
+  border-radius: 60px;
+  padding: 40px 30px;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 20%;
+  left: -200px;
+}
+#about > div > img {
+width: 400px;
+}
+
+/* footer */
+footer {
+  background-color: var(--color4);
+}
+.footer-container {
+  width: 100%;
+ padding: 5%;
+ gap: 5%;
+ 
+ 
+}
+.footer > img {
+  width: 100px;
+  height: 100px;
+}
+.footer {
+  text-align: center;
+  width: 20%;
+}
+
+.footer  > li:first-child {
+  font-weight: bolder;
+ }
+footer:nth-child(3) {
+  padding: 10px;
+  text-align: center;
+}
+
+/* medias */
+@media (max-width: 800px) {
+
+#about > div > img {
+    display: none;
+  }
+  #about {
+   background-image: url(https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821077/mariana-medvedeva-usfIE5Yc7PY-unsplash_znuztr.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+  }
+  #about > div {
+    width: 100%;
+    height: 60svh;
+   }
+  #about > div > article {
+   left: 0;
+  }
+}
+
+@media (max-width: 670px) {
+
+
+  #about > div > article {
+    width: 250px;
+    padding: 30px 20px;
+  }
+  #about > div > article > p {
+    font-size: 12px;
+  }
+  #about > div > article > h4 {
+    font-size: 20px;
+  }
+  .form-grupo > #text {
+    width: 300px;
+    height: 200px;
+  }
+  
+}
+@media (max-width: 774px) {
+  #hero > h2 {
+    font-size: 3em;
+    padding-top: 20%;
+    width: 80%;
+   
+  }
+}
+
+@media (max-width: 392px) {
+  #hero > h2 {
+    font-size: 2.5em;
+    padding-top: 20%;
+    width: 80%;
+   
+  }
+
+  .grid-container {
+    display: flex;
+    padding: 20px;
+   
+    flex-direction: column;
+ 
+    
+   }
+   .gift {
+   font-size: 12px;
+  }
+   
+   
+   .item img {
+right: 15px;
+    width: 10px;
+   }
+   .form-grupo > #text {
+    width: 200px;
+    height: 200px;
+  }
+  .footer-container {
+    justify-content: space-between;
+  
+}
+
+  .footer {
+   font-size: 12px;
+   text-align: justify;
+  }
+
+}
+ 
+@media screen and (max-width: 645px) {
+  .sticky,  .desplegable  ul, .desplegable  ul li {
+    display: inline;
+  }
+ 
+.stiky {
+   display: flex;
+   justify-content: space-around;
+  }
+ .desplegable {
+  width: 100%;
+  display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100svh;
+  background-color: var(--color7);
+    padding-top: 3em;
+    padding-left: 6em;
+    opacity: 0.8;
+  }
+  .desplegable ul, .desplegable ul li {
+ display: block;
+ text-align: right;
+ padding: 10px;
+  }
+  #menu-check:not(:checked) ~ .desplegable  {
+    display: none;
+  }
+  #menu-check:checked ~ .desplegable {
+    display: block;
+    
+  }
+  #menu {
+    display: block;
+    color: var(--color5);
+   font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    right: 0.6em;
+    top: 0.4em;
+    z-index: 9999999;
+  }
+
+  #menu-cerrar {
+    display: none;
+  }
+  #menu-check:checked ~label #menu-abrir {
+    display: none;
+   
+  }
+  #menu-check:checked ~label #menu-cerrar {
+    display: block;
+  }
+  h1 {
+    font-family: var(--logo-font);
+     color: var(--color4);
+     
+     
+  }
+.logo {
+ padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+}
