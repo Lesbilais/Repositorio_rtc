@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/logo-01_yykhpb.png"
+    type="image/x-icon">
   <title>proyecto landing-page</title>
 </head>
 
 <body>
 
   <header class="flex-container sticky">
-    <div class="flex-container">
-      <img src="./assets/gift.png" alt="logo soso" />
+    <input type="checkbox" id="menu-check">
+    <label for="menu-check" id="menu">
+      <span id="menu-abrir">&#9776</span>
+      <span id="menu-cerrar">✖ </span>
+    </label>
+    <div class="flex-container logo">
+      <img src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/logo-01_yykhpb.png" alt="logo soso" />
 
       <h1>SoSo</h1>
     </div>
-    <nav>
+    <nav class="desplegable">
       <ul class="flex-container">
         <li>
           <a href="#hero">Home</a>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <a href="#sales">Offer</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#Shop">Shop</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <button class="button-contact">Contact Us</button>
+          <button class="button-contact"><a href="#contact">Contact Us</a></button>
         </li>
       </ul>
     </nav>
@@ -49,69 +56,214 @@
     </section>
     <section class="grid-container gift">
       <div class="item">
-        <img src="./assets/conver.png" alt="conversacion">
+        <img src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821073/conver_yqywyh.png" alt="conversacion">
         <h3>Your Supplement Quiz</h3>
         <p>Discover tailored results just for you in our quick 2-minute free quiz!</p>
       </div>
       <div class="item">
-        <img src="./assets/gift.png" alt="gift">
+        <img src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/gift_im7ryu.png" alt="gift">
         <h3>Customized Recommendations</h3>
         <p>Find your perfect supplements based on your unique needs and goals!</p>
       </div>
       <div class="item">
-        <img src="./assets/star.png" alt="star">
+        <img src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821073/star_jg1dg5.png" alt="star">
         <h3>Building Habits</h3>
         <p>Embark on your path to better health with expert guidance every step of the way</p>
       </div>
     </section>
+
+    <section id="sales">
+      <h4>Special Offer!</h4>
+      <div class="flex-container">
+        <article class="card">
+          <h4>Multivitamin C</h4>
+          <img
+            src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/natures-aid-vitamin-c-500mg-chewable-p244-1116_image_fe8u38.jpg"
+            alt="vitamin">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>Add to card - €12</button>
+        </article>
+        <article class="card">
+          <h4>Vitamin Daily</h4>
+          <img
+            src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/JPG_3156a321a6a628722651813ad3d40399_gnlngu.png"
+            alt="vitamin">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>Add to card - €12</button>
+        </article>
+        <article class="card">
+          <h4>Multivitamin 18+</h4>
+          <img
+            src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/natures-aid-vitamin-c-500mg-chewable-p244-1116_image_fe8u38.jpg"
+            alt="vitamin">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>Add to card - €12</button>
+        </article>
+        <article class="card">
+          <h4>Multivitamin 18+</h4>
+
+          <img
+            src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/natures-aid-vitamin-c-500mg-chewable-p244-1116_image_fe8u38.jpg"
+            alt="vitamin">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>Add to card - €12</button>
+        </article>
+        <article class="card">
+          <h4>Vitamin Daily</h4>
+          <img
+            src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/JPG_3156a321a6a628722651813ad3d40399_gnlngu.png"
+            alt="vitamin" title="vitamin">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>Add to card - €12</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="Shop">
+      <h4>Shop</h4>
+      <div class="flex-container">
+        <article class="shop">
+          <h4>Healthy basket</h4>
+          <img src="https://ece.emory.edu/_includes/images/sections/programs/HealthCoach-Page-Hero-Side.jpg"
+            alt="wellnes">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>More Info</button>
+        </article>
+        <article class="shop">
+          <h4>Wellness basket</h4>
+
+          <img src="https://glamgroup.co.za/wp-content/uploads/2022/04/pexels-nathan-cowley-1153370-1-scaled.jpg"
+            alt="wellnes">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>More Info</button>
+        </article>
+        <article class="shop">
+          <h4>Healthy basket</h4>
+          <img src="https://ece.emory.edu/_includes/images/sections/programs/HealthCoach-Page-Hero-Side.jpg"
+            alt="wellnes">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>More Info</button>
+        </article>
+        <article class="shop">
+          <h4>Wellness basket</h4>
+
+          <img src="https://glamgroup.co.za/wp-content/uploads/2022/04/pexels-nathan-cowley-1153370-1-scaled.jpg"
+            alt="wellnes">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi
+            reiciendis
+            nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
+            provident.</p>
+          <button>More Info</button>
+        </article>
+      </div>
+
+    </section>
+
+    <section>
+      <div id="about" class="flex-container">
+        <div>
+          <img
+            src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821077/mariana-medvedeva-usfIE5Yc7PY-unsplash_znuztr.jpg"
+            alt="about us" />
+          <article class="flex-container column">
+            <h4>About us</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ullam aspernatur beatae ipsa fugit at
+              nesciunt labore reprehenderit harum sint quidem, alias saepe libero. Totam culpa labore impedit velit
+              voluptas.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, esse alias cum iste cumque vel et
+              incidunt, odit perferendis ab eos eaque soluta iure libero, nihil voluptas non adipisci dolores?
+            </p>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="flex-container contact-container">
+
+
+
+
+      <div class="form-container">
+        <div id="form">
+          <h4 id="#Contact">Contact Us </h4>
+          <form action="#" method="post">
+            <div class="form-grupo">
+              <label for="nombre">Name </label>
+              <input type="text" id="name" name="name" required placeholder="Name">
+            </div>
+            <div class="form-grupo">
+              <label for="email">Mail </label>
+              <input type="email" id="email" name="email" required placeholder="mail@domain.com">
+            </div>
+            <div class="form-grupo">
+              <label for="text">Message</label>
+              <input type="text" id="text" name="text" required>
+            </div>
+            <div class="form-grupo">
+              <button class="button-hero button-contact" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+
   </main>
-  <section class="flex-container">
-    <article class="card">
-      <h4>Multivitamin C</h4>
-      <img src="./assets/natures-aid-vitamin-c-500mg-chewable-p244-1116_image.jpg" alt="vitamin">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi reiciendis
-        nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
-        provident.</p>
-      <button>Add to card - €12</button>
-    </article>
-    <article class="card">
-      <h4>Vitamin Daily</h4>
-      <img src="./assets/JPG_3156a321a6a628722651813ad3d40399.png" alt="vitamin">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi reiciendis
-        nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
-        provident.</p>
-      <button>Add to card - €12</button>
-    </article>
-    <article class="card">
-      <h4>Multivitamin 18+</h4>
-      <img src="./assets/natures-aid-vitamin-c-500mg-chewable-p244-1116_image.jpg" alt="vitamin">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi reiciendis
-        nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
-        provident.</p>
-      <button>Add to card - €12</button>
-    </article>
-    <article class="card">
-      <h4>Multivitamin 18+</h4>
-      <img src="./assets/natures-aid-vitamin-c-500mg-chewable-p244-1116_image.jpg" alt="vitamin">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi reiciendis
-        nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
-        provident.</p>
-      <button>Add to card - €12</button>
-    </article>
-    <article class="card">
-      <h4>Vitamin Daily</h4>
-      <img src="./assets/JPG_3156a321a6a628722651813ad3d40399.png" alt="vitamin">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, unde provident tenetur commodi reiciendis
-        nam? Nesciunt commodi maiores deleniti ut sapiente aspernatur id ex saepe. Eius repellat iure suscipit
-        provident.</p>
-      <button>Add to card - €12</button>
-    </article>
-  </section>
-  <footer class="flex-container">
-    <div>
-      <img src="./assets/mariana-medvedeva-usfIE5Yc7PY-unsplash.jpg" alt="">
+  <footer>
+    <div class="footer-container flex-container">
+      <img src="https://res.cloudinary.com/dgrbdmq57/image/upload/v1697821074/logo-01_yykhpb.png" alt="logo"
+        title="logo">
+      <ul class="footer">
+        <li>Information</li>
+        <li>About Us</li>
+        <li>About Zip</li>
+        <li>Privacy Policy</li>
+      </ul>
+      <ul class="footer">
+        <li>Search</li>
+        <li>Terms</li>
+        <li>About</li>
+        <li>Testimonials</li>
+      </ul>
+      <ul class="footer">
+        <li>Orders and Returns</li>
+        <li>Contact Us</li>
+        <li>Advanced Search</li>
+        <li>Newsletter Subscription</li>
+      </ul>
     </div>
-    <div></div>
+    <p>Hecho con amor por Victoria 🍎 </p>
   </footer>
 </body>
 
