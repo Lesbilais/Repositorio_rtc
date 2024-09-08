@@ -73,6 +73,7 @@ position:sticky;
   background-color:var(--coloropacity);
   z-index: 999999999999999999999;
 }
+
 header img {
 width: 50px;
 }
@@ -388,23 +389,24 @@ right: 15px;
  
 @media screen and (max-width: 645px) {
   .sticky,  .desplegable  ul, .desplegable  ul li {
-    display: inline;
+    display: block;
   }
  
 .stiky {
    display: flex;
    justify-content: space-around;
+   
   }
  .desplegable {
   width: 100%;
   display: inline;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100svh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100svh;
   background-color: var(--color7);
-    padding-top: 3em;
-    padding-left: 6em;
+ padding-top: 3em;
+ padding-left: 6em;
     opacity: 0.8;
   }
   .desplegable ul, .desplegable ul li {
